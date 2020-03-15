@@ -9,7 +9,8 @@ while Check_leap != ValueError:
     except ValueError:
         print("Isn't integer. Please write integer")
 
-if Check_leap % 4 == 0:
+#if Check_leap % 4 == 0:
+if (Check_leap % 4 == 0 and Check_leap % 100 != 0) or (Check_leap % 100 == 0 and Check_leap % 400 == 0):
     print(Check_leap, "'s - this is the leap year!")
 else:
     print(Check_leap, "'s - is not leap year!!!")

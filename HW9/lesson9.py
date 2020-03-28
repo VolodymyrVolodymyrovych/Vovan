@@ -10,7 +10,7 @@ def encrypt(string_):
         for j in range(0, len(low)):
             if string_[i] == low[j]:
                 if low[j+3] >= low[len(low)-1]:
-                    encr.append(low[j+3 - len(low) - 1])
+                    encr.append(low[j+3 - len(low)])
                 else:
                     encr.append(low[j+3])
 

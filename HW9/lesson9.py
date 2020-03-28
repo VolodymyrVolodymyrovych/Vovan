@@ -3,7 +3,7 @@ import string
 
 def encrypt(string_):
     string_ = list(string_)
-    low = list(string.ascii_lowercase*2)
+    low = list(string.ascii_lowercase)
     index = 0
     encr = []
     for i in range(0, len(string_)):
